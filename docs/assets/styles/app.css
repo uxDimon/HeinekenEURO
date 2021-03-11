@@ -1,0 +1,86 @@
+:root {
+  --content-p-r: 0; }
+
+@font-face {
+  font-family: "HEINEKEN";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/HEINEKENCore.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap; }
+
+* {
+  box-sizing: border-box;
+  outline-offset: 4px; }
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select,
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "HEINEKEN", sans-serif; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+body {
+  font-family: "HEINEKEN", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #002605;
+  background-image: url("../images/bkg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.hn-content__wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.hn-content {
+  max-width: 450px;
+  min-width: 375px;
+  min-height: 670px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 40px 26px;
+  justify-items: center; }
+
+.hn-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hn-content-header__text {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 260px; }
+
+.hn-content-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hn-content-body__img-ball {
+  margin-top: 100px; }
+
+.hn-content-body__text {
+  margin-top: 22px;
+  text-align: center;
+  max-width: 260px; }
